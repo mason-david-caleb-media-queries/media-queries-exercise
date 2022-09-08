@@ -1,4 +1,6 @@
-
+* {
+    /*border: 1px red solid;*/
+}
 
 .alert-info {
 display: none;
@@ -8,7 +10,7 @@ display: none;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 69px;
+    bottom: 76px;
 }
 
 h1 {
@@ -28,18 +30,23 @@ ul li {
     align-items: center;
 }
 
+
 section {
     display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    flex-basis: 50%;
-    flex-direction: column;
-}
-
-.main, .sub-section {
     justify-content: flex-end;
-
-
+    flex-wrap: wrap;
+    width: 50%;
+    float: left;
+    margin: auto;
 }
 
+section:nth-of-type(1) {
+    display: flex;
+}
 
+section:nth-of-type(2) {
+    display: flex;
+}
+
+footer {
+}
