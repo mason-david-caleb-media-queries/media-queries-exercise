@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
+    column-gap: 10px;
 }
 
 .alert-info {
@@ -23,7 +24,7 @@ h1 {
 }
 .nav-links {
     list-style: none;
-    margin 0 .7rem;
+    margin: 0 .7rem;
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -52,6 +53,37 @@ img {
 
 .sub-section h2 {
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hidden-on-desktop {
+        display: none
+    }
+    .nav-links {
+        flex-direction: row;
+        margin-top: 1.2em;
+    }
+    .nav-links li {
+        background: none;
+    }
+    .main {
+        flex-basis: 55%;
+    }
+    .sub-section {
+        flex-basis: 35%;
+
+        /*flex-basis: calc(40% - 10px);*/
+        /*margin-right: 10px;*/
+    }
+
+    .header-img {
+        width: 100%;
+    }
 }
 
 /* ORIGINAL CODE BELOW */
