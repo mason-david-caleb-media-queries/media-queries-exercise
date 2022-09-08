@@ -1,3 +1,9 @@
+
+
+.alert-info {
+display: none;
+}
+
 .nav-links {
     display: flex;
     justify-content: flex-end;
@@ -16,6 +22,24 @@ ul li {
     list-style: none;
 }
 
-.alert-info {
-    display: none;
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.main, .sub-section {
+    justify-content: flex-end;
+
+
+}
+
+
